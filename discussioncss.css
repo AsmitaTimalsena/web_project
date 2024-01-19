@@ -1,0 +1,113 @@
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-color: lightslategray;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display:flex;
+    
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar  a {
+    float: left;
+    padding-left: 10px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    z-index: 1;
+    min-width: 160px
+}
+
+.dropdown-content a .b{
+    display: block;
+    text-align: left;
+    padding: 12px 16px;
+}
+.b{
+    float: left;
+    padding-left: 10px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+}
+.b:hover{
+    background-color: #ddd;
+    color: black;
+}
+button {
+    background-color: #333;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.interaction {
+    background-color: aquamarine;
+    height: 500px;
+    width: 700px;
+    margin: 30px auto;  box-shadow: 5px 10px 18px lightcyan;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.chat_screen {
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: calc(100% - 100px);
+    overflow-y: auto;
+}
+
+.write_your {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.write_your textarea {
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    margin: 10px 10px 10px 10px;
+}
+input{
+    margin-left: 10px;
+    height: 20px;
+}
